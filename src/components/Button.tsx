@@ -1,9 +1,5 @@
 import React, { ButtonHTMLAttributes, DetailedHTMLProps, ReactNode } from 'react';
 
-const base = 'px-8 py-3 shadow rounded-lg font-medium transition-all duration-300';
-export const primaryStyle = `${base} bg-primary-500 hover:bg-primary-600 text-white`;
-export const secondaryStyle = `${base} bg-white hover:bg-primary-600 hover:text-white`;
-
 interface Props {
 	children: ReactNode;
 	className?: string;
@@ -13,7 +9,7 @@ interface Props {
 
 const Button = ({ children, className = '', type, props = {} }: Props) => {
 	return (
-		<button className={`${type === 'primary' ? primaryStyle : secondaryStyle} ${className}`} {...props}>
+		<button className={`${type === 'primary' ? 'btn-primary' : 'btn-secondary'} ${className}`} {...props}>
 			{children}
 		</button>
 	);

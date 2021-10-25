@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+	@apply px-8 py-3 shadow rounded-lg font-medium transition-all duration-300;
+}
+
+.btn-primary {
+	@apply btn bg-primary-500 hover:bg-primary-600 text-white;
+}
+
+.btn-secondary {
+	@apply btn bg-white hover:bg-primary-600 hover:text-white;
+}
+
+.input {
+	@apply w-1/2 border-4 py-1.5 px-3 rounded-lg shadow focus:border-primary-400 focus:outline-none focus:shadow-2xl;
+}

@@ -25,31 +25,15 @@ const Register: NextPage = () => {
 				>
 					<div className='w-full flex justify-between items-center py-3'>
 						<label htmlFor='name'>Name</label>
-						<input
-							type='text'
-							id='name'
-							className='w-1/2 border-4 py-1.5 px-3 rounded-lg shadow focus:border-primary-400 focus:outline-none focus:shadow-2xl'
-							required
-						/>
+						<input type='text' id='name' className='input' required />
 					</div>
 					<div className='w-full flex justify-between items-center py-3'>
 						<label htmlFor='email'>Email</label>
-						<input
-							type='email'
-							id='email'
-							className='w-1/2 border-4 py-1.5 px-3 rounded-lg shadow focus:border-primary-400 focus:outline-none focus:shadow-2xl'
-							required
-						/>
+						<input type='email' id='email' className='input' required />
 					</div>
 					<div className='w-full flex justify-between items-center py-3'>
 						<label htmlFor='password'>New Password</label>
-						<input
-							type='password'
-							name='password'
-							id='password'
-							className='w-1/2 border-4 py-1.5 px-3 rounded-lg shadow focus:border-primary-400 focus:outline-none focus:shadow-2xl'
-							required
-						/>
+						<input type='password' name='password' id='password' className='input' required />
 					</div>
 					<div className='w-full flex justify-between items-center py-3'>
 						<label htmlFor='confirm-password'>Confirm Password</label>
@@ -57,18 +41,13 @@ const Register: NextPage = () => {
 							type='password'
 							name='confirm-password'
 							id='confirm-password'
-							className='w-1/2 border-4 py-1.5 px-3 rounded-lg shadow focus:border-primary-400 focus:outline-none focus:shadow-2xl'
+							className='input'
 							required
 						/>
 					</div>
 					<div className='w-full flex justify-between items-center py-3'>
 						<label htmlFor='user-type'>Select user type:</label>
-						<select
-							name='user-type'
-							id='user-type'
-							className='w-1/2 border-4 py-2 px-3 rounded-lg shadow focus:border-primary-400 focus:outline-none focus:shadow-2xl'
-							required
-						>
+						<select name='user-type' id='user-type' className='input py-2 px-3 bg-white' required>
 							<option value='candidate'>Candidate</option>
 							<option value='employer'>Employer</option>
 						</select>

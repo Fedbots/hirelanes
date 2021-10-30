@@ -1,0 +1,149 @@
+[
+	{
+		"id": "bh",
+		"company": "Baker Hughes",
+		"position": "Software Engineer",
+		"salary": "₹60,000",
+		"logo": "https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/n1ftivyzkrvizrn1jlbe"
+	},
+	{
+		"id": "sh",
+		"company": "Swabhav Techlabs",
+		"position": "Software Engineer",
+		"salary": "₹60,000",
+		"logo": "https://media-exp1.licdn.com/dms/image/C4E0BAQFS5dar7GR2_A/company-logo_200_200/0/1519891468403?e=2159024400&v=beta&t=lv_huHy3VqvJugWcCxOtprgX5CVnzGugF1DtQIpk6NI"
+	},
+	{
+		"id": "naa",
+		"company": "Network Alliances Aetna",
+		"position": "Network Manager",
+		"salary": "₹45,000",
+		"logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/20/Aetna.svg/1200px-Aetna.svg.png"
+	},
+	{
+		"id": "ab",
+		"company": "Anthias Biopharma",
+		"position": "Network Manager",
+		"salary": "₹45,000",
+		"logo": "https://dynamic.placementindia.com/recruiter_comp_logo/954973_20201202164529.jpg"
+	},
+	{
+		"id": "syc",
+		"company": "Square Yards Consulting",
+		"position": "Sales Executive",
+		"salary": "₹35,000",
+		"logo": "https://static.squareyards.com/logo/sy-logo.jpg"
+	},
+	{
+		"id": "ef",
+		"company": "Eureka Forbes",
+		"position": "Sales Executive",
+		"salary": "₹35,000",
+		"logo": "https://microenergycredits.com/wp-content/uploads/2015/12/eureka-forbes-logo.jpg"
+	},
+	{
+		"id": "bb",
+		"company": "Bright Brain",
+		"position": "Sales Manager",
+		"salary": "₹45,000",
+		"logo": "data:image/png;base64,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"
+	},
+	{
+		"id": "vbs",
+		"company": "Valiant Business Solutions",
+		"position": "Sales Manager",
+		"salary": "₹45,000",
+		"logo": "data:image/png;base64,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"
+	},
+	{
+		"id": "jhc",
+		"company": "Jubiliant HR Consultants",
+		"position": "HR Manager",
+		"salary": "₹50,000",
+		"logo": "https://media-exp1.licdn.com/dms/image/C4D0BAQH4KzGj-_YWFg/company-logo_200_200/0/1593672124508?e=2159024400&v=beta&t=HqWXdddFiW_7gbIBTd0u2zw4OGdIRI5mMCmGo4TR8ns"
+	},
+	{
+		"id": "tts",
+		"company": "True Tech Solutions",
+		"position": "HR Manager",
+		"salary": "₹50,000",
+		"logo": "https://media-exp1.licdn.com/dms/image/C510BAQEeyuOts0RYKA/company-logo_200_200/0/1519891540947?e=2159024400&v=beta&t=zaM2SraI7lgLMMXYvXnTbdDX-MprjruVOazTZcguoOM"
+	},
+	{
+		"id": "oct",
+		"company": "Orange Current Technologies Pvt Ltd",
+		"position": "Business Analyst",
+		"salary": "₹75,000",
+		"logo": "https://orangecurrent.com/assets/images/oct-logo.png"
+	},
+	{
+		"id": "cp",
+		"company": "Colgate Palmolive Company",
+		"position": "Business Analyst",
+		"salary": "₹75,000",
+		"logo": "https://s30113.pcdn.co/wp-content/uploads/2020/01/p1dvhe6um21gjke3c192o1h0ebil6.png"
+	},
+	{
+		"id": "f",
+		"company": "Fiserv",
+		"position": "Business Analyst",
+		"salary": "₹75,000",
+		"logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Fiserv_logo.svg/1200px-Fiserv_logo.svg.png"
+	},
+	{
+		"id": "g",
+		"company": "Genpact",
+		"position": "Business Analyst",
+		"salary": "₹75,000",
+		"logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Genpact_logo.svg/1200px-Genpact_logo.svg.png"
+	},
+	{
+		"id": "pc",
+		"company": "Parity Cube Pvt Ld",
+		"position": "Product Manager",
+		"salary": "₹82,000",
+		"logo": "data:image/jpeg;base64,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"
+	},
+	{
+		"id": "c",
+		"company": "Coinbase",
+		"position": "Product Manager",
+		"salary": "₹82,000",
+		"logo": "https://play-lh.googleusercontent.com/en2GK3lyzFXplv-rMvd5E5cIhBUQXWNU5nN3GfwFcaJmghHTbFYEPAVE9meLceBq338"
+	},
+	{
+		"id": "u",
+		"company": "Upstox",
+		"position": "Product Manager",
+		"salary": "₹82,000",
+		"logo": "https://upstox.com/app/uploads/2021/02/Logo-for-blog-header-700x244.jpg"
+	},
+	{
+		"id": "pu",
+		"company": "PayU",
+		"position": "Product Manager",
+		"salary": "₹82,000",
+		"logo": "https://jumpseller.com/images/gateways/gateway_payu.jpg"
+	},
+	{
+		"id": "id",
+		"company": "Iorta",
+		"position": "UI/UX Designer",
+		"salary": "₹67,000",
+		"logo": "https://media-exp1.licdn.com/dms/image/C4E0BAQGFs5pwmVO7ug/company-logo_200_200/0/1519867742582?e=2159024400&v=beta&t=rZuWHkDHPP-6HwUuq73oshfRUI1-HEi1wEJT5-YkspY"
+	},
+	{
+		"id": "nel",
+		"company": "NextEdge Labs",
+		"position": "UI/UX Designer",
+		"salary": "₹67,000",
+		"logo": "data:image/png;base64,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"
+	},
+	{
+		"id": "at",
+		"company": "Agami Tech",
+		"position": "UI/UX Designer",
+		"salary": "₹67,000",
+		"logo": "https://www.agami-tech.com/wp-content/uploads/Profile-AgamiTech-01-1.jpeg"
+	}
+]

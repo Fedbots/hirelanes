@@ -21,7 +21,7 @@ const Register: NextPage = () => {
 
 	return (
 		<Layout>
-			<main className='w-1/2 mx-auto rounded-3xl shadow-md p-9'>
+			<main className='w-1/2 mx-auto l1'>
 				<h1 className='text-4xl text-primary-800 font-bold pb-2 text-center'>Sign Up</h1>
 				<p className='text-center'>
 					Already registered?{' '}
@@ -36,10 +36,9 @@ const Register: NextPage = () => {
 						e.preventDefault();
 						if (typeof window !== undefined) {
 							const accounts: Array<User> = JSON.parse(window.localStorage.getItem('accounts') || '[]');
-							if (accounts.find(a => a.email !== email)) {
-								accounts.push({ name, email, type });
-								window.localStorage.setItem('accounts', JSON.stringify(accounts));
-							}
+							if (accounts.find(a => a.email === email)) router.push('/login');
+							accounts.push({ name, email, type });
+							window.localStorage.setItem('accounts', JSON.stringify(accounts));
 							router.push('/login');
 						}
 					}}

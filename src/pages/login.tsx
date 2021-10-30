@@ -25,7 +25,6 @@ const Login: NextPage = () => {
 					className='w-2/3 mx-auto flex justify-evenly flex-wrap pt-12'
 					onSubmit={e => {
 						e.preventDefault();
-						console.log('Form Submitted!');
 						if (typeof window !== undefined) {
 							const accounts: Array<User> = JSON.parse(window.localStorage.getItem('accounts') || '[]');
 							const acc = accounts.find(a => a.email === email);

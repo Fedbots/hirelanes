@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import Head from 'next/head';
 import Layout from '../components/Layout';
 import Link from '../components/Link';
 import Image from 'next/image';
@@ -8,6 +9,9 @@ import { dealURI } from '../util/misc';
 const Home: NextPage = () => {
 	return (
 		<Layout>
+			<Head>
+				<title>HireLanes</title>
+			</Head>
 			<div className='flex' style={{ height: '85vh' }}>
 				<div className='w-1/3 px-12 flex flex-col justify-between'>
 					<section>

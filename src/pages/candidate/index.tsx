@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from 'next';
+import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 import Layout from '../../components/Layout';
@@ -23,6 +24,9 @@ const CDB: NextPage = () => {
 
 	return (
 		<Layout session='candidate'>
+			<Head>
+				<title>Candidate Dashboard - HireLanes</title>
+			</Head>
 			<h1 className='text-5xl'>
 				Hello <span className='font-bold text-primary-800'>{name}</span>!
 			</h1>

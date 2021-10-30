@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 import Layout from '../../components/Layout';
@@ -20,6 +21,9 @@ const EDB: NextPage = () => {
 
 	return (
 		<Layout session='employer'>
+			<Head>
+				<title>Employer Dashboard - HireLanes</title>
+			</Head>
 			<main className='w-3/4 mx-auto flex justify-between p-9'>
 				<aside className='w-1/3 text-center l1'>
 					<p className='text-2xl'>Applicants</p>

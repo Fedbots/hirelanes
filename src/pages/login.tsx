@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import Button from '../components/Button';
@@ -12,6 +13,9 @@ const Login: NextPage = () => {
 
 	return (
 		<Layout>
+			<Head>
+				<title>Login - HireLanes</title>
+			</Head>
 			<main className='w-1/2 mx-auto l1'>
 				<h1 className='text-4xl text-primary-800 font-bold pb-2 text-center'>Log In</h1>
 				<p className='text-center'>

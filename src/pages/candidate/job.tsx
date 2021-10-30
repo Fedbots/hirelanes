@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from 'next';
 import { useRouter } from 'next/router';
+import Head from 'next/head';
 import { useEffect, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -33,6 +34,9 @@ const JobPreview: NextPage = () => {
 
 	return (
 		<Layout session='candidate'>
+			<Head>
+				<title>Job Details - HireLanes</title>
+			</Head>
 			<main className='w-3/4 mx-auto flex flex-wrap items-center l1 mb-10'>
 				<aside className='w-1/6 flex justify-center'>
 					<img src={logo} alt='Company Logo' className='h-32 w-32 rounded-full' />

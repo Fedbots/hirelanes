@@ -3,11 +3,12 @@ import Nav from './Nav';
 
 interface Props {
 	children: ReactNode;
+	session?: string;
 }
 
-const Layout = ({ children }: Props) => (
+const Layout = ({ children, session }: Props) => (
 	<Fragment>
-		<Nav />
+		<Nav session={session} />
 		<main className='font-serif container'>{children}</main>
 	</Fragment>
 );

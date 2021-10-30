@@ -17,3 +17,7 @@
 .input {
 	@apply w-1/2 border-4 py-1.5 px-3 rounded-lg shadow focus:border-primary-400 focus:outline-none focus:shadow-2xl;
 }
+
+.l1 {
+	@apply rounded-3xl shadow-md p-9;
+}

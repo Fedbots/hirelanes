@@ -1,12 +1,18 @@
 import type { NextPage } from 'next';
+import { useRouter } from 'next/router';
+import { useState } from 'react';
 import Button from '../components/Button';
 import Layout from '../components/Layout';
 import Link from '../components/Link';
+import { User } from './register';
 
 const Login: NextPage = () => {
+	const router = useRouter();
+	const [email, setEmail] = useState('');
+
 	return (
 		<Layout>
-			<main className='w-1/2 mx-auto rounded-3xl shadow-md p-9'>
+			<main className='w-1/2 mx-auto l1'>
 				<h1 className='text-4xl text-primary-800 font-bold pb-2 text-center'>Log In</h1>
 				<p className='text-center'>
 					New?{' '}
@@ -20,11 +26,25 @@ const Login: NextPage = () => {
 					onSubmit={e => {
 						e.preventDefault();
 						console.log('Form Submitted!');
+						if (typeof window !== undefined) {
+							const accounts: Array<User> = JSON.parse(window.localStorage.getItem('accounts') || '[]');
+							const acc = accounts.find(a => a.email === email);
+							if (!acc) router.push('/register');
+							window.localStorage.setItem('session', JSON.stringify(acc));
+							if (acc?.type === 'candidate') router.push('/candidate');
+							else router.push('/employer');
+						}
 					}}
 				>
 					<div className='w-full flex justify-between items-center py-3'>
 						<label htmlFor='email'>Email</label>
-						<input type='email' id='email' className='input' required />
+						<input
+							type='email'
+							id='email'
+							className='input'
+							required
+							onBlur={e => setEmail(e.target.value)}
+						/>
 					</div>
 					<div className='w-full flex justify-between items-center py-3'>
 						<label htmlFor='password'>Password</label>

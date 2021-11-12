@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 import Button from '../components/Button';
@@ -21,6 +22,9 @@ const Register: NextPage = () => {
 
 	return (
 		<Layout>
+			<Head>
+				<title>Register - HireLanes</title>
+			</Head>
 			<main className='w-1/2 mx-auto l1'>
 				<h1 className='text-4xl text-primary-800 font-bold pb-2 text-center'>Sign Up</h1>
 				<p className='text-center'>
@@ -73,13 +77,15 @@ const Register: NextPage = () => {
 					</div>
 					<div className='w-full flex justify-between items-center py-3'>
 						<label htmlFor='user-type'>Select user type:</label>
-						<select name='user-type' id='user-type' className='input py-2 px-3 bg-white' required>
-							<option value='candidate' onClick={() => setType('candidate')}>
-								Candidate
-							</option>
-							<option value='employer' onClick={() => setType('employer')}>
-								Employer
-							</option>
+						<select
+							name='user-type'
+							id='user-type'
+							className='input py-2 px-3 bg-white'
+							onChange={e => setType(e.target.value as UserType)}
+							required
+						>
+							<option value='candidate'>Candidate</option>
+							<option value='employer'>Employer</option>
 						</select>
 					</div>
 

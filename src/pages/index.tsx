@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Image from 'next/image';
 import Layout from '../components/Layout';
 import Link from '../components/Link';
-import Image from 'next/image';
 import deal from '../img/deal.svg';
 import { dealURI } from '../util/misc';
 

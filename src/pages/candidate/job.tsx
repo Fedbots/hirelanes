@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from 'next';
-import { useRouter } from 'next/router';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Button from '../../components/Button';
 import Layout from '../../components/Layout';
